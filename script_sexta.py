@@ -26,7 +26,9 @@ print("---------------\n\n\n\n");
 # db1.to_csv(r'C:\Users\lucas\Desktop\trabalho-sexta\dados_nulos_mas_limpos.csv', index=False);
 
 # Remove qualquer linha que possua valores nulos, independente de qual valor esteja nulo.
-db1.dropna(axis=0, how='any', inplace=True);
+# db1.dropna(axis=0, how='any', inplace=True);
+
+db1 = db1.fillna(db1.mean())
 
 db1 = db1.Amount.abs();
 print(db1)
