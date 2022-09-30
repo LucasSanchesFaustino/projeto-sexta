@@ -28,9 +28,9 @@ print("---------------\n\n\n\n");
 # Remove qualquer linha que possua valores nulos, independente de qual valor esteja nulo.
 db1.dropna(axis=0, how='any', inplace=True);
 
+db1 = db1.Amount.abs();
 print(db1)
 
 # Exportando .csv de controle
-db1.to_csv(r'C:\Users\lucas\Desktop\trabalho-sexta\dados_limpos.csv', index=False);
-
+db1.to_csv(r'C:\Users\lucas\Desktop\proj-sexta\dados_limpos.csv', index=False);
 
