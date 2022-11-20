@@ -32,7 +32,7 @@ print(db);
 db1.dropna(axis=1, how='any');
 
 # Criando objeto que contém os dois dataframes.
-dataframes = [db, db1];
+dataframes = [db1, db];
 
 # Concatenando os dataframes.
 db_isolado = pd.concat(dataframes);
